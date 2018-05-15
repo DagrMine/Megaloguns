@@ -3,9 +3,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace PLACEHOLDER.Items.Guns
+namespace Megaloguns.Items.Guns
 {
-	public class ExampleGun : ModItem
+	public class Flameshark : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -35,9 +35,10 @@ namespace PLACEHOLDER.Items.Guns
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "SoulofMight", 20);
-			recipe.AddIngredient(null, "ChlorophyteBar", 20);
-			recipe.AddTile(null, "MythrilAnvil");
+			recipe.AddIngredient (ItemID.SoulofMight, 20);
+			recipe.AddIngredient (ItemID.ChlorophyteBar, 20);
+			recipe.AddIngredient (ItemID.Flamethrower, 1);
+			recipe.AddTile (TileID.MythrilAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
