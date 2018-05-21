@@ -14,12 +14,12 @@ namespace Megaloguns.Weapons
 
 		public override void SetDefaults()
 		{
-			item.damage = 20;
+			item.damage = 80;
 			item.ranged = true;
 			item.width = 40;
 			item.height = 20;
-			item.useTime = 20;
-			item.useAnimation = 20;
+			item.useTime = 35;
+			item.useAnimation = 35;
 			item.useStyle = 5;
 			item.noMelee = true; //so the item's animation doesn't do damage
 			item.knockBack = 4;
@@ -28,15 +28,15 @@ namespace Megaloguns.Weapons
 			item.UseSound = SoundID.Item11;
 			item.autoReuse = true;
 			item.shoot = 10; //idk why but all the guns in the vanilla source have this
-			item.shootSpeed = 16f;
+			item.shootSpeed = 35f;
 			item.useAmmo = AmmoID.Bullet;
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "ExampleItem", 10);
-			recipe.AddTile(null, "ExampleWorkbench");
+			recipe.AddIngredient(null, "ShroomiteBar", 10);
+			recipe.AddTile(null, "MythrilAnvil");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
