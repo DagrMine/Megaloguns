@@ -9,7 +9,7 @@ namespace Megaloguns.Weapons
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Who's up for some wild westing? CHANGE THIS LATER.");
+			Tooltip.SetDefault("Now if only there were shroomboy hats...");
 		}
 
 		public override void SetDefaults()
