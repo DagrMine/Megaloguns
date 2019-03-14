@@ -29,7 +29,6 @@ namespace ExtraSwords.Items
 		{
 			return new Vector2(10, 0);
 		}
-
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
