@@ -25,6 +25,10 @@ namespace ExtraSwords.Items
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}
+		public override Vector2? HoldoutOffset()
+		{
+			return new Vector2(10, 0);
+		}
 
 		public override void AddRecipes()
 		{
