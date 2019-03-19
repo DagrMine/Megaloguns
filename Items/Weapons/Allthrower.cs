@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Megaloweapons.Items.Guns
+namespace Megaloguns.Items.Guns
 {
 	public class Allthrower : ModItem
 	{
