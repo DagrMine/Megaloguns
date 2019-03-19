@@ -36,41 +36,50 @@ namespace Megaloguns.Items.Guns
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "SoulofMight", 10);
-            recipe.AddIngredient(null, "CursedFlame", 5);
-			recipe.AddIngredient(null, "ShadowFlameHexDoll", 10);
-			recipe.AddIngredient(null, "Gel", 40);
-			recipe.AddIngredient(null, "MusketBall", 20);
+            		recipe.AddIngredient(null, "CursedFlame", 5);
+			recipe.AddIngredient(null, "ShadowFlameHexDoll", 1);
+			recipe.AddIngredient(null, "Gel", 999);
+			recipe.AddIngredient(null, "MusketBall", 999);
 			recipe.AddIngredient(null, "Flamethrower", 1);
-			recipe.AddIngredient(null, "ShroomiteBar", 15);
+			recipe.AddIngredient(null, "ShroomiteBar", 10);
+			recipe.AddIngredient(null, "ChlorophyteBar", 10);
+			recipe.AddIngredient(Megaloguns, "CursedFlamethrower", 1);
 			recipe.AddTile(null, "MythrilAnvil");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 			
-			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "SoulofMight", 10);
-            recipe.AddIngredient(null, "Ichor", 5);
-			recipe.AddIngredient(null, "ShadowFlameHexDoll", 1);
-			recipe.AddIngredient(null, "Gel", 40);
-			recipe.AddIngredient(null, "MusketBall", 20);
-			recipe.AddIngredient(null, "Flamethrower", 1);
-			recipe.AddIngredient(null, "ShroomiteBar", 15);
-			recipe.AddTile(null, "MythrilAnvil");
-			recipe.SetResult(this);
-			recipe.AddRecipe();
+			//recipe = new ModRecipe(mod);	//How and why did I even do this? Either way use the top recipe, i'll // this for now
+			//recipe.AddIngredient(null, "SoulofMight", 10);
+            		//recipe.AddIngredient(null, "Ichor", 5);
+			//recipe.AddIngredient(null, "ShadowFlameHexDoll", 1);
+			//recipe.AddIngredient(null, "Gel", 40);
+			//recipe.AddIngredient(null, "MusketBall", 20);
+			//recipe.AddIngredient(null, "Flamethrower", 1);
+			//recipe.AddIngredient(null, "ShroomiteBar", 15);
+			//recipe.AddTile(null, "MythrilAnvil");
+			//recipe.SetResult(this);
+			//recipe.AddRecipe();
 		}
 		
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
-        Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
-        Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.CursedFlameFriendly, damage = 10, knockBack = 1, player.whoAmI);
-        Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.DD2BetsyFlameBreath, damage = 10, knockBack = 1, player.whoAmI);
-        Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Flames, damage = 10, knockBack = 1, player.whoAmI);
-        Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.GreekFire1, damage = 10, knockBack = 1, player.whoAmI);
-        Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.ShadowFlame, damage = 10, knockBack = 1, player.whoAmI);
-        if (type == ProjectileID.Bullet)
-		type = ProjectileID.IchorBullet; // I just don't feel like removing bullets so....
-        return true;
-        }
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.CursedFlameFriendly, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.DD2BetsyFlameBreath, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Flames, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.GreekFire1, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.MolotovFire1, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.EyeFire, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.MolotovFire3, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
+			if (type == ProjectileID.Bullet)
+			type = ProjectileID.IchorBullet; // Noice fire
+			return true;
+		}
         
         public override bool ConsumeAmmo(Player player)
 		{
