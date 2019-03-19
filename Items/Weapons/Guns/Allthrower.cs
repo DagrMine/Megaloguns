@@ -9,7 +9,7 @@ namespace Megaloguns.Items.Guns
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("ALL THE FIRE!");
+			Tooltip.SetDefault("ALL THE FIRE! (Please don't point this at people...)");
 		}
 
 		public override void SetDefaults()
@@ -70,12 +70,12 @@ namespace Megaloguns.Items.Guns
 			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.GreekFire1, damage = 10, knockBack = 1, player.whoAmI);
 			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.MolotovFire1, damage = 10, knockBack = 1, player.whoAmI);
 			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.EyeFire, damage = 10, knockBack = 1, player.whoAmI);
-			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.MolotovFire3, damage = 10, knockBack = 1, player.whoAmI);
-			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
-			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
-			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
-			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
-			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.DD2FlameBurstTowerT3Shot, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.FlamesTrap, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.FlamethrowerTrap, damage = 10, knockBack = 1, player.whoAmI);
+			Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.CursedFlameHostile, damage = 10, knockBack = 1, player.whoAmI);
+			//Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
+			//Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.Shadowflames, damage = 10, knockBack = 1, player.whoAmI);
 			if (type == ProjectileID.Bullet)
 			type = ProjectileID.IchorBullet; // Noice fire
 			return true;
