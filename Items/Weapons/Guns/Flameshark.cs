@@ -9,7 +9,7 @@ namespace Megaloguns.Items.Guns
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Flamethrowers aren't enough and neither are machine guns. What about flamethrower machine guns?");
+			Tooltip.SetDefault("Flamethrower + Megashark = Flameshark. Its simple math.");
 		}
 
 		public override void SetDefaults()
