@@ -15,7 +15,7 @@ namespace Megaloguns.Items.Guns
 
 		public override void SetDefaults()
 		{
-			item.damage = 60;
+			item.damage = 80;
 			item.ranged = true;
 			item.width = 80;
 			item.height = 40;
@@ -44,6 +44,8 @@ namespace Megaloguns.Items.Guns
 			recipe.AddIngredient(null, "Flamethrower", 1);
 			recipe.AddIngredient(null, "ShroomiteBar", 10);
 			recipe.AddIngredient(null, "ChlorophyteBar", 10);
+			recipe.AddIngredient(null, "HallowedBar", 10);
+			recipe.AddIngredient(null, "Ichor", 10);
 			recipe.AddIngredient(Megaloguns, "CursedFlamethrower", 1);
 			recipe.AddTile(null, "MythrilAnvil");
 			recipe.SetResult(this);
