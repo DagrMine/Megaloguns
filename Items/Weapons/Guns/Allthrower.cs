@@ -9,6 +9,7 @@ namespace Megaloguns.Items.Guns
 	{
 		public override void SetStaticDefaults()
 		{
+			DisplayName.SetDefault("The Allthrower");
 			Tooltip.SetDefault("ALL THE FIRE! (Please don't point this at people...)");
 		}
 
@@ -24,7 +25,7 @@ namespace Megaloguns.Items.Guns
 			item.noMelee = true; //so the item's animation doesn't do damage
 			item.knockBack = 2;
 			item.value = 60000;
-			item.rare = 12;
+			item.rare = -12;
 			item.UseSound = SoundID.Item11;
 			item.autoReuse = true;
 			item.shoot = 10; //idk why but all the guns in the vanilla source have this
