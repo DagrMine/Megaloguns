@@ -46,7 +46,7 @@ namespace Megaloguns.Items.Guns
 			recipe.AddIngredient(null, "ChlorophyteBar", 10);
 			recipe.AddIngredient(null, "HallowedBar", 10);
 			recipe.AddIngredient(null, "Ichor", 10);
-			recipe.AddIngredient(Megaloguns, "CursedFlamethrower", 1);
+			//recipe.AddIngredient(Megaloguns, "CursedFlamethrower", 1); Come back and add this later.
 			recipe.AddTile(null, "MythrilAnvil");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
